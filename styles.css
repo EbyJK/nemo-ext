@@ -104,3 +104,33 @@ body {
   font-size: 14px;
 }
 
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.task-title {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.task-meta {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.task-actions button {
+  margin-top: 6px;
+  font-size: 11px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
