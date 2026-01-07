@@ -1,0 +1,106 @@
+body {
+  width: 360px; /* max practical width */
+  margin: 0;
+  padding: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f9fafb;
+  color: #111827;
+}
+
+header {
+  margin-bottom: 12px;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+section {
+  margin-top: 12px;
+}
+
+section h3 {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  font-size: 13px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.task-title {
+  font-weight: 600;
+}
+
+.task-meta {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.task-actions {
+  margin-top: 6px;
+}
+
+button {
+  font-size: 11px;
+  padding: 4px 6px;
+  border: none;
+  border-radius: 4px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f9fafb;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  background: white;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
