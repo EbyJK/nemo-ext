@@ -7,10 +7,10 @@
   
   "description": "Corporate Email Assistant",
    "icons": {
-    "16": "assets/icon.ico",
-    "32": "assets/icon.ico",
-    "48": "assets/icon.ico",
-    "128": "assets/icon.ico"
+    "16": "assets/icon.png",
+    "32": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
   },
   "permissions": ["sidePanel"],
   "host_permissions": ["http://127.0.0.1:8000/*"],
