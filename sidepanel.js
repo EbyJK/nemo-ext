@@ -5,7 +5,8 @@ async function loadData() {
   const tasks = await fetch(`${BACKEND}/tasks?completed=false`).then(r => r.json())
 
   const summariesDiv = document.getElementById('summaries')
-  summariesDiv.innerHTML = '<h3>Summaries</h3>'
+  // summariesDiv.innerHTML = '<h3>Summaries</h3>'
+  summariesDiv.innerHTML = ''
 
   summaries.forEach(s => {
     const div = document.createElement('div')
@@ -15,7 +16,8 @@ async function loadData() {
   })
 
   const tasksDiv = document.getElementById('tasks')
-  tasksDiv.innerHTML = '<h3>Tasks</h3>'
+  // tasksDiv.innerHTML = '<h3>Tasks</h3>'
+  tasksDiv.innerHTML = ''
 
   tasks.forEach(t => {
     const div = document.createElement('div')
