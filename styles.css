@@ -112,6 +112,12 @@ section h3 {
   padding: 12px;
   font-size: 13px;
   transition: all 0.25s ease;
+
+  /* Prevent content overflow */
+  max-height: 200px; /* Adjust the height as needed */
+  overflow: hidden;  /* Hide excess content */
+  text-overflow: ellipsis;  /* Add '...' for truncated text */
+  word-wrap: break-word;    /* Ensure text wraps */
 }
 
 .card:hover {
@@ -119,6 +125,13 @@ section h3 {
   border-color: #3b82f6;
   box-shadow: 0 0 14px rgba(59, 130, 246, 0.3);
 }
+
+/* Optional: For larger content, you can make the content scrollable */
+.card.scrollable {
+  overflow-y: auto;
+  max-height: 220px; /* Allow more height if needed */
+}
+
 
 /* ========= TASK STYLES ========= */
 .task-title {
