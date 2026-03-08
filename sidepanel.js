@@ -10,17 +10,18 @@ async function loadData() {
     const summariesDiv = document.getElementById('summaries')
     summariesDiv.innerHTML = ''
 
-    summaries.forEach(s => {
+    summaries.slice(0,5).forEach(s => {
       const div = document.createElement('div')
       div.className = 'card'
-      div.textContent = s.summary
+      // div.textContent = s.summary
+      div.innerHTML = `<div class="summary-text">${s.summary}</div>`
       summariesDiv.appendChild(div)
     })
 
     const tasksDiv = document.getElementById('tasks')
     tasksDiv.innerHTML = ''
 
-    tasks.forEach(t => {
+    tasks.slice(0,5).forEach(t => {
       const div = document.createElement('div')
       div.className = 'card'
       div.innerHTML = `
@@ -58,7 +59,20 @@ async function loadData() {
 
   } catch (err) {
     console.error("Sidepanel load error:", err)
+    document.getElementById("summaries").innerHTML =
+    "<div class='card'>Failed to load summaries</div>"
+
+  document.getElementById("tasks").innerHTML =
+    "<div class='card'>Failed to load tasks</div>"
   }
 }
 
 loadData()
+
+
+
+setInterval(loadData, 30000)
+
+document.getElementById("refreshBtn").onclick = () => {
+  loadData()
+}

@@ -77,10 +77,11 @@ async function loadData() {
     const summariesDiv = document.getElementById('summaries')
     summariesDiv.innerHTML = '' // clear old content
 
-    summaries.forEach(s => {
+    summaries.slice(0,5).forEach(s => {
       const div = document.createElement('div')
       div.className = 'card'
-      div.textContent = s.summary
+      // div.textContent = s.summary
+      div.innerHTML = `<div class="summary-text">${s.summary}</div>`
       summariesDiv.appendChild(div)
     })
 
@@ -88,7 +89,7 @@ async function loadData() {
     const tasksDiv = document.getElementById('tasks')
     tasksDiv.innerHTML = '' // clear old content
 
-    tasks.forEach(t => {
+    tasks.slice(0,5).forEach(t => {
       const div = document.createElement('div')
       div.className = 'card'
 
@@ -137,3 +138,7 @@ async function loadData() {
 }
 
 loadData()
+
+document.getElementById("refreshBtn").onclick = () => {
+  loadData()
+}
