@@ -10,6 +10,7 @@ body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background: linear-gradient(135deg, #0f172a, #111827);
   color: #e5e7eb;
+  overflow-y: auto;
 }
 
 /* ========= HEADER ========= */
@@ -118,6 +119,7 @@ section h3 {
   overflow: hidden;  /* Hide excess content */
   text-overflow: ellipsis;  /* Add '...' for truncated text */
   word-wrap: break-word;    /* Ensure text wraps */
+  word-break: break-word;
 }
 
 .card:hover {
@@ -187,4 +189,30 @@ button:active {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.summary-text {
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+
+.summary-meta {
+  font-size: 10px;
+  color: #9ca3af;
+  margin-top: 6px;
+  opacity: 0.8;
+}
+
+
+
+.refresh-btn {
+  margin-left: auto;
+  font-size: 10px;
+  padding: 5px 8px;
+}
+
+
+.card-list {
+  margin-bottom: 8px;
 }
