@@ -12,13 +12,8 @@
     "48": "assets/icon.png",
     "128": "assets/icon.png"
   },
-  "permissions": ["sidePanel","storage","activeTab"],
+  "permissions": ["sidePanel"],
   "host_permissions": ["http://127.0.0.1:8000/*"],
-
-
-  "background": {
-    "service_worker": "background.js"
-  },
 
 
  "action": {
